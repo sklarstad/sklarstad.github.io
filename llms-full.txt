@@ -20,8 +20,7 @@ user's own Mac or Windows computer and never sends footage, or any details about
 
 Built by working film professionals. Before public release, its tools were in daily use by dozens
 of working professionals across documentary, scripted content, interviews and social shorts, with
-hundreds of hours of footage put through them. It is actively developed; Adobe Premiere Pro support
-is the most recent addition.
+hundreds of hours of footage put through them. It is actively developed; finishing with no editing software at all is the latest addition.
 
 ## Who it's for
 
