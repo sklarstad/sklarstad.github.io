@@ -1,12 +1,12 @@
 # Sklarstad
 
-> Sklarstad builds AI-native software for film and video production. The team combines working industry professionals, engineering leaders from FAANG companies, technologists and creatives. Its first product, FirstTake, is a Claude Code skill that carries a shoot from planning through a delivered master. FirstTake launches no later than October 5, 2026; until then it is pre-launch and early access is by email to sklarstad@gmail.com.
+> Sklarstad builds AI-native software for film and video production. The team combines working industry professionals, engineering leaders from FAANG companies, technologists and creatives. Its first product, FirstTake, is a skill for Claude Code and other AI coding assistants that carries a shoot from planning through a delivered master. FirstTake launches no later than October 5, 2026; until then it is pre-launch and early access is by email to sklarstad@gmail.com.
 
-Sklarstad's software runs on the user's own computer: footage is never uploaded to Sklarstad. Tools report measured values rather than assumptions, and stop and say so when they cannot do something exactly.
+Sklarstad's software runs on the user's own computer and never sends footage or any details about a shoot to anyone. Tools report measured values rather than assumptions, and stop and say so when they cannot do something exactly.
 
 ## Products
 
-- [FirstTake](https://sklarstad.github.io/firsttake/): Claude Code skill for video production — verified card offload, footage QC, multi-camera sync with no shared timecode, and edit, grade, mix, captions and delivery in DaVinci Resolve or Adobe Premiere Pro (early access). Mac and Windows. From $99 per shoot; $599/year Creator; $2,499/year Studio (10 seats).
+- [FirstTake](https://sklarstad.github.io/firsttake/): video production skill for Claude Code and other AI coding assistants — verified card offload, footage QC, multi-camera sync with no shared timecode, and edit, grade, mix, captions and delivery. No editing software required (renders a full-quality master itself); optional editable timeline in DaVinci Resolve Studio or Adobe Premiere Pro (early access). Mac and Windows. From $99 per shoot; $599/year Creator; $2,499/year Studio (10 seats).
 
 ## Machine-readable
 

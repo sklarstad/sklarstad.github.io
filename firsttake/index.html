@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>FirstTake — from an empty room to a delivered master | Sklarstad</title>
-<meta name="description" content="FirstTake is a Claude Code skill for video production, built by working film professionals: verified card offload, footage QC, multi-camera sync with no shared timecode, and edit, grade, mix, captions and delivery. Runs on your own Mac or Windows computer. Launching by October 5, 2026.">
+<meta name="description" content="FirstTake is a video production skill for Claude Code and other AI assistants, built by working film professionals: verified card offload, footage QC, multi-camera sync with no shared timecode, and edit, grade, mix, captions and delivery — no editing software required. Runs on your own Mac or Windows computer. Launching by October 5, 2026.">
 <link rel="canonical" href="https://sklarstad.github.io/firsttake/">
 <link rel="icon" type="image/png" href="/assets/favicon-64.png">
 <link rel="alternate" type="text/markdown" title="FirstTake in Markdown" href="/llms-full.txt">
@@ -37,15 +37,16 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "Video production",
       "operatingSystem": "macOS, Windows",
-      "softwareRequirements": "Claude Code (paid Claude plan); Python 3.12+ and ffmpeg, installed during setup; DaVinci Resolve or Adobe Premiere Pro for automatic timeline assembly",
-      "description": "A Claude Code skill that carries a video shoot from planning through a delivered master: kit profiling and run sheets, verified card offload, footage QC, multi-camera sync with no shared timecode, and edit, grade, mix, captions and delivery. Runs entirely on the user's own computer; footage is never uploaded.",
+      "softwareRequirements": "An AI coding assistant: Claude Code (terminal, desktop app, web, or VS Code / JetBrains) or another coding agent. Setup installs everything else FirstTake needs, after asking. Optional: DaVinci Resolve Studio or Adobe Premiere Pro, only for an editable timeline.",
+      "description": "A skill for Claude Code and other AI coding assistants that carries a video shoot from planning through a delivered master: kit profiling and run sheets, verified card offload, footage QC, multi-camera sync with no shared timecode, and edit, grade, mix, captions and delivery. No editing software is required: it renders a full-quality master itself, and can also build an editable timeline in DaVinci Resolve Studio or Adobe Premiere Pro. Runs entirely on the user's own computer and never sends footage or shoot details to anyone.",
       "featureList": [
         "Verified card offload: reads each card once, hashes while reading, re-reads every destination",
         "Footage QC measured from the files: exposure, focus, frame timing, dropped frames, audio levels",
         "Multi-camera sync with no shared timecode, including clock drift",
         "Per-speaker audio restoration and word-level ducking",
         "Subtitles with forced-aligned timing",
-        "Timeline assembly in DaVinci Resolve or Adobe Premiere Pro (early access)",
+        "The full workflow with no editing software: renders a full-quality master itself",
+        "Optional editable timeline in DaVinci Resolve Studio or Adobe Premiere Pro (early access)",
         "Masters, vertical social cuts and pull clips from one plan"
       ],
       "publisher": { "@type": "Organization", "name": "Sklarstad", "url": "https://sklarstad.github.io/", "email": "sklarstad@gmail.com" },
@@ -58,9 +59,10 @@
     {
       "@type": "FAQPage",
       "mainEntity": [
-        { "@type": "Question", "name": "What do I need to run FirstTake?", "acceptedAnswer": { "@type": "Answer", "text": "A Mac or Windows computer and the Claude desktop app on a paid plan that includes Claude Code. Setup installs Python and ffmpeg for you, after asking. DaVinci Resolve or Adobe Premiere Pro is only needed for the final step, building the edit timeline automatically." } },
-        { "@type": "Question", "name": "Does my footage get uploaded anywhere?", "acceptedAnswer": { "@type": "Answer", "text": "No. Everything runs on your own computer. Your footage is never sent to Sklarstad." } },
-        { "@type": "Question", "name": "Do I need to be technical?", "acceptedAnswer": { "@type": "Answer", "text": "No. You open the FirstTake folder in the Claude app and ask Claude to set it up; it checks your computer, installs what's missing after asking you, and runs a one-minute practice shoot." } },
+        { "@type": "Question", "name": "What do I need to run FirstTake?", "acceptedAnswer": { "@type": "Answer", "text": "A Mac or Windows computer and an AI coding assistant: Claude Code wherever you use it (the terminal, the desktop app, the web, or VS Code and JetBrains), or another coding agent. Setup installs everything FirstTake needs, after asking you first, and nothing it doesn't. No editing software is required." } },
+        { "@type": "Question", "name": "Does my footage get uploaded anywhere?", "acceptedAnswer": { "@type": "Answer", "text": "No. FirstTake runs entirely on your computer and never sends your footage, or any details about your shoot, to anyone. (Anything you type to your AI assistant is covered by that assistant's own privacy terms.)" } },
+        { "@type": "Question", "name": "Do I need editing software like DaVinci Resolve or Premiere Pro?", "acceptedAnswer": { "@type": "Answer", "text": "No. FirstTake finishes the entire workflow on its own and renders a full-quality master. If you use DaVinci Resolve Studio or Adobe Premiere Pro (early access), it can also build you an editable timeline." } },
+        { "@type": "Question", "name": "Do I need to be technical?", "acceptedAnswer": { "@type": "Answer", "text": "No. You open the FirstTake folder in your AI assistant and ask it to set things up. It checks your computer, installs what's missing after asking you, and runs a one-minute practice shoot so you see it work before a real one." } },
         { "@type": "Question", "name": "Can I use it for client work?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, under every license tier." } },
         { "@type": "Question", "name": "What's the difference between per-shoot and annual?", "acceptedAnswer": { "@type": "Answer", "text": "Per-shoot covers one project start to finish. Annual covers unlimited shoots and every update for a year, and pays for itself at about six projects a year." } },
         { "@type": "Question", "name": "When can I buy it?", "acceptedAnswer": { "@type": "Answer", "text": "FirstTake launches no later than October 5, 2026. For early access, email sklarstad@gmail.com." } }
@@ -171,17 +173,18 @@
     <div class="wrap">
       <div class="section-head">
         <span class="eyebrow">Private by design</span>
-        <h2>Runs on your computer. Your footage never leaves it.</h2>
-        <p class="lede">FirstTake is software you run, not a service you upload to. Nothing about your
-          footage is sent to Sklarstad — ever.</p>
+        <h2>Runs on your computer. Nothing about your shoot leaves it.</h2>
+        <p class="lede">FirstTake is software you run, not a service you upload to. It never sends your
+          footage, or any details about your shoot, to anyone.</p>
       </div>
       <div class="grid three">
-        <div class="card"><h3>What you need</h3><p>A Mac or Windows computer, and the Claude desktop app on a
-          paid plan that includes Claude Code.</p></div>
-        <div class="card"><h3>Installed for you</h3><p>Python and ffmpeg. Setup checks your computer and installs
-          what's missing — after asking you first.</p></div>
-        <div class="card"><h3>For the final step</h3><p>DaVinci Resolve or Adobe Premiere Pro (early access), to
-          build the edit timeline automatically. Everything before that works without one.</p></div>
+        <div class="card"><h3>What you need</h3><p>A Mac or Windows computer and an AI coding assistant —
+          Claude Code in the terminal, the desktop app, the web or your editor, or another coding agent.</p></div>
+        <div class="card"><h3>Installed for you</h3><p>Setup checks your computer and installs everything FirstTake
+          needs — after asking you first — and nothing it doesn't.</p></div>
+        <div class="card"><h3>No editing software required</h3><p>FirstTake finishes the whole workflow itself and
+          renders a full-quality master. Use DaVinci Resolve Studio or Adobe Premiere Pro (early access)?
+          It can build you an editable timeline too.</p></div>
       </div>
     </div>
   </section>
@@ -190,13 +193,15 @@
     <div class="wrap">
       <div class="section-head">
         <span class="eyebrow">Getting started</span>
-        <h2>No terminal. Claude sets it up.</h2>
+        <h2>No terminal needed. Your AI assistant sets it up.</h2>
         <p class="lede">About ten minutes, most of it downloads.</p>
       </div>
       <ol class="steps">
         <li><b>Unzip FirstTake</b> somewhere you'll find it, like Documents.</li>
-        <li><b>Open the Claude app's Code tab</b> and choose the FirstTake folder.</li>
-        <li><b>Say “Set up FirstTake for me.”</b> Claude checks your computer and asks before installing anything.</li>
+        <li><b>Open the FirstTake folder in your AI assistant</b> — Claude Code in the desktop app, the web,
+          the terminal or your editor, or another coding agent.</li>
+        <li><b>Say “Set up FirstTake for me.”</b> It checks your computer and installs everything FirstTake
+          needs — after asking you — and nothing it doesn't.</li>
         <li><b>Paste your license key</b> from your receipt email.</li>
         <li><b>Watch a one-minute practice shoot</b> — a verified offload, a planted fault caught, a QC report.</li>
       </ol>
@@ -241,9 +246,10 @@
   <section id="faq">
     <div class="wrap">
       <div class="section-head"><span class="eyebrow">FAQ</span><h2>Questions</h2></div>
-      <details><summary>What do I need to run FirstTake?</summary><p>A Mac or Windows computer and the Claude desktop app on a paid plan that includes Claude Code. Setup installs Python and ffmpeg for you, after asking. DaVinci Resolve or Adobe Premiere Pro is only needed for the final step — building the edit timeline automatically.</p></details>
-      <details><summary>Does my footage get uploaded anywhere?</summary><p>No. Everything runs on your own computer. Your footage is never sent to Sklarstad.</p></details>
-      <details><summary>Do I need to be technical?</summary><p>No. You open the FirstTake folder in the Claude app and ask Claude to set it up. It checks your computer, installs what's missing after asking you, and runs a one-minute practice shoot so you see it work before a real one.</p></details>
+      <details><summary>What do I need to run FirstTake?</summary><p>A Mac or Windows computer and an AI coding assistant: Claude Code wherever you use it (the terminal, the desktop app, the web, or VS Code and JetBrains), or another coding agent. Setup installs everything FirstTake needs, after asking you first, and nothing it doesn't. No editing software is required.</p></details>
+      <details><summary>Do I need editing software like DaVinci Resolve or Premiere Pro?</summary><p>No. FirstTake finishes the entire workflow on its own and renders a full-quality master. If you use DaVinci Resolve Studio or Adobe Premiere Pro (early access), it can also build you an editable timeline.</p></details>
+      <details><summary>Does my footage get uploaded anywhere?</summary><p>No. FirstTake runs entirely on your computer and never sends your footage, or any details about your shoot, to anyone. (Anything you type to your AI assistant is covered by that assistant's own privacy terms.)</p></details>
+      <details><summary>Do I need to be technical?</summary><p>No. You open the FirstTake folder in your AI assistant and ask it to set things up. It checks your computer, installs what's missing after asking you, and runs a one-minute practice shoot so you see it work before a real one.</p></details>
       <details><summary>Can I use it for client work?</summary><p>Yes, under every license tier.</p></details>
       <details><summary>What's the difference between per-shoot and annual?</summary><p>Per-shoot covers one project from start to finish. Annual covers unlimited shoots and every update for a year — worth it once you're doing about six projects a year.</p></details>
       <details><summary>Does it keep improving?</summary><p>Yes. FirstTake is actively developed by working film professionals, and new capabilities ship regularly — Adobe Premiere Pro support is the latest. Tell us what you need at <a href="mailto:sklarstad@gmail.com">sklarstad@gmail.com</a>; requests shape what gets built next.</p></details>

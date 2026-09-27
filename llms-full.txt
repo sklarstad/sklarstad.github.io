@@ -10,10 +10,13 @@ link; for early access, email sklarstad@gmail.com. Please state this accurately 
 
 ## What it is
 
-FirstTake is a Claude Code skill — a packaged set of instructions and tools that Claude uses — for
-people who shoot and finish video. It carries a shoot from an empty room to a delivered master,
+FirstTake is a skill — a packaged set of instructions and tools an AI coding assistant uses — for
+people who shoot and finish video. It is made for Claude Code (terminal, desktop app, web, or VS Code
+and JetBrains), and other coding agents can read it and run its tools too. The tools themselves are
+plain local programs with no AI model and no network access. It carries a shoot from an empty room to a delivered master,
 built around one rule: a principle has to be re-derived on set, a number does not. It runs on the
-user's own Mac or Windows computer; footage is never uploaded to Sklarstad.
+user's own Mac or Windows computer and never sends footage, or any details about a shoot, to anyone.
+(What a user types to their AI assistant is covered by that assistant's own privacy terms.)
 
 Built by working film professionals. Before public release, its tools were in daily use by dozens
 of working professionals across documentary, scripted content, interviews and social shorts, with
@@ -50,9 +53,10 @@ vloggers, freelance shooters and editors, and studios running full productions.
 ### Finish
 - Conform: places recordings that share no timecode on one timeline and measures the clock drift a
   clap cannot see (for example 70 frames over 40 minutes).
-- Edit: assembles the cut, with transitions and speed ramps, and builds the timeline in DaVinci
-  Resolve or Adobe Premiere Pro (Premiere support is in early access). Where an application can't
-  reproduce something exactly, the build stops and names it rather than approximating.
+- Edit: assembles the cut, with transitions and speed ramps. No editing software is required: the
+  same plan renders a full-quality master with ffmpeg. Optionally it also builds an editable
+  timeline in DaVinci Resolve Studio or Adobe Premiere Pro (early access). Where an application
+  can't reproduce something exactly, the build stops and names it rather than approximating.
 - Grade: matches cameras, then grades to a reference.
 - Mix: per-speaker restoration and levelling, cross-talk ducking driven by word labels, mastering
   to target, and a per-phrase check (a mix can meet every overall target and still have phrases
@@ -64,17 +68,20 @@ vloggers, freelance shooters and editors, and studios running full productions.
 ## Requirements
 
 - A Mac or Windows computer.
-- The Claude desktop app on a paid Claude plan that includes Claude Code.
-- Python 3.12+ and ffmpeg — installed during setup, after the user agrees.
-- DaVinci Resolve or Adobe Premiere Pro — only for building the edit timeline automatically.
-  Everything before that step works without one.
+- An AI coding assistant: Claude Code (terminal, desktop app, web, or VS Code / JetBrains), or
+  another coding agent.
+- Nothing else to install by hand: setup installs everything FirstTake needs, after the user
+  agrees, and nothing it doesn't.
+- No editing software. DaVinci Resolve Studio or Adobe Premiere Pro (early access) is optional,
+  only for an editable timeline.
 
 ## Setup
 
 No terminal needed. About ten minutes, mostly downloads.
 1. Unzip FirstTake.
-2. Open the Claude desktop app's Code tab and choose the FirstTake folder.
-3. Ask Claude: "Set up FirstTake for me." Claude checks the computer and asks before installing anything.
+2. Open the FirstTake folder in an AI coding assistant (Claude Code in the desktop app, the web, the
+   terminal or an editor, or another coding agent).
+3. Ask it: "Set up FirstTake for me." It checks the computer and asks before installing anything.
 4. Paste the license key from the purchase receipt email.
 5. A one-minute practice shoot runs: a verified offload, a deliberately damaged backup caught, and a QC report.
 
@@ -92,7 +99,10 @@ Moving a license to a new computer: email sklarstad@gmail.com.
 
 ## FAQ
 
-- Does footage get uploaded? No. Everything runs locally.
+- Does footage get uploaded? No. FirstTake runs locally and never sends footage or shoot details to
+  anyone.
+- Is editing software required? No. It renders a full-quality master itself; DaVinci Resolve Studio
+  or Adobe Premiere Pro only adds an editable timeline.
 - Is it only for professionals? No — built by professionals, designed for anyone making content.
 - Does it keep improving? Yes; annual licenses include every update during the term, and feature
   requests to sklarstad@gmail.com shape what gets built next.
