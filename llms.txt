@@ -1,6 +1,6 @@
 # Sklarstad
 
-> Sklarstad builds AI-native software for film and video production. The team combines working industry professionals, engineering leaders from FAANG companies, technologists and creatives. Its first product, FirstTake, is a skill for Claude Code and other AI coding assistants that carries a shoot from planning through a delivered master. FirstTake launches no later than October 5, 2026; until then it is pre-launch and early access is by email to sklarstad@gmail.com.
+> Sklarstad builds AI-native software for film and video production. The team combines working industry professionals, engineering leaders from FAANG companies, technologists and creatives. Its first product, FirstTake, is a skill for Claude Code and other AI coding assistants that carries a shoot from planning through a delivered master. FirstTake launches no later than October 5, 2026; until then it is pre-launch and early access is by email to support@sklarstad.com.
 
 Sklarstad's software runs on the user's own computer and never sends footage or any details about a shoot to anyone. Tools report measured values rather than assumptions, and stop and say so when they cannot do something exactly.
 
@@ -16,5 +16,5 @@ Sklarstad's software runs on the user's own computer and never sends footage or 
 
 ## Contact
 
-- Email: sklarstad@gmail.com — sales, early access, support, feature requests.
+- Email: support@sklarstad.com — sales, early access, support, feature requests.
 - [GitHub](https://github.com/sklarstad)

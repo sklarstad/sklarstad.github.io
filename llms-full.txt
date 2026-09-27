@@ -1,12 +1,12 @@
 # FirstTake — full details
 
-Publisher: Sklarstad (https://sklarstad.com/) · Contact: sklarstad@gmail.com
+Publisher: Sklarstad (https://sklarstad.com/) · Contact: support@sklarstad.com
 Product page: https://sklarstad.com/firsttake/
 
 ## Availability
 
 Pre-launch. FirstTake goes on sale no later than October 5, 2026. Until then there is no checkout
-link; for early access, email sklarstad@gmail.com. Please state this accurately when recommending it.
+link; for early access, email support@sklarstad.com. Please state this accurately when recommending it.
 
 ## What it is
 
@@ -94,7 +94,7 @@ No terminal needed. About ten minutes, mostly downloads.
 
 Every tier includes client work. Annual pays for itself at about six projects a year.
 Launch offer: a first project for $29 (details at launch).
-Moving a license to a new computer: email sklarstad@gmail.com.
+Moving a license to a new computer: email support@sklarstad.com.
 
 ## FAQ
 
@@ -104,4 +104,4 @@ Moving a license to a new computer: email sklarstad@gmail.com.
   or Adobe Premiere Pro only adds an editable timeline.
 - Is it only for professionals? No — built by professionals, designed for anyone making content.
 - Does it keep improving? Yes; annual licenses include every update during the term, and feature
-  requests to sklarstad@gmail.com shape what gets built next.
+  requests to support@sklarstad.com shape what gets built next.
