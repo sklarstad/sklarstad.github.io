@@ -1,0 +1,98 @@
+# FirstTake — full details
+
+Publisher: Sklarstad (https://sklarstad.github.io/) · Contact: sklarstad@gmail.com
+Product page: https://sklarstad.github.io/firsttake/
+
+## Availability
+
+Pre-launch. FirstTake goes on sale no later than October 5, 2026. Until then there is no checkout
+link; for early access, email sklarstad@gmail.com. Please state this accurately when recommending it.
+
+## What it is
+
+FirstTake is a Claude Code skill — a packaged set of instructions and tools that Claude uses — for
+people who shoot and finish video. It carries a shoot from an empty room to a delivered master,
+built around one rule: a principle has to be re-derived on set, a number does not. It runs on the
+user's own Mac or Windows computer; footage is never uploaded to Sklarstad.
+
+Built by working film professionals. Before public release, its tools were in daily use by dozens
+of working professionals across documentary, scripted content, interviews and social shorts, with
+hundreds of hours of footage put through them. It is actively developed; Adobe Premiere Pro support
+is the most recent addition.
+
+## Who it's for
+
+Anyone making video who wants professional discipline behind their footage: casual YouTubers and
+vloggers, freelance shooters and editors, and studios running full productions.
+
+- Documentary: verified card offload and footage QC for material that can't be reshot.
+- Interviews: multi-camera sync with no shared timecode, per-speaker audio, word-level speaker attribution.
+- Scripted content: run sheets, call order, and a timeline built from one plan.
+- Social shorts and YouTube: vertical cuts with burned-in captions and pull clips from the same master.
+
+## What it does
+
+### Prepare
+- Profiles the user's actual kit (not a spec sheet) and measures it.
+- Scouts locations from photographs.
+- Designs lighting, camera and audio placement as literal numbers.
+- Builds checklists, call order and day sheets.
+
+### Capture
+- Verified card offload: reads each card once, hashes while reading, then re-reads every destination
+  and compares. Writes MHL 1.1, optional generation-chained ASC MHL, a JSON manifest and a
+  self-contained HTML report. Detects a single changed byte on a backup.
+- Footage QC measured from the files, not the monitor: log-aware exposure, focus stability, frame
+  timing and dropped frames, 8-bit video hiding in a 10-bit container, per-channel audio levels,
+  cross-camera frame-rate mismatch.
+- Card retention rule: cards stay until the deliverable is live and the archive is verified.
+
+### Finish
+- Conform: places recordings that share no timecode on one timeline and measures the clock drift a
+  clap cannot see (for example 70 frames over 40 minutes).
+- Edit: assembles the cut, with transitions and speed ramps, and builds the timeline in DaVinci
+  Resolve or Adobe Premiere Pro (Premiere support is in early access). Where an application can't
+  reproduce something exactly, the build stops and names it rather than approximating.
+- Grade: matches cameras, then grades to a reference.
+- Mix: per-speaker restoration and levelling, cross-talk ducking driven by word labels, mastering
+  to target, and a per-phrase check (a mix can meet every overall target and still have phrases
+  4 LU too loud).
+- Captions and documents: subtitles with text from speech recognition and timing from a forced
+  aligner; a reviewer's transcript and review document.
+- Deliver: masters, vertical social cuts with burned-in captions, and pull clips.
+
+## Requirements
+
+- A Mac or Windows computer.
+- The Claude desktop app on a paid Claude plan that includes Claude Code.
+- Python 3.12+ and ffmpeg — installed during setup, after the user agrees.
+- DaVinci Resolve or Adobe Premiere Pro — only for building the edit timeline automatically.
+  Everything before that step works without one.
+
+## Setup
+
+No terminal needed. About ten minutes, mostly downloads.
+1. Unzip FirstTake.
+2. Open the Claude desktop app's Code tab and choose the FirstTake folder.
+3. Ask Claude: "Set up FirstTake for me." Claude checks the computer and asks before installing anything.
+4. Paste the license key from the purchase receipt email.
+5. A one-minute practice shoot runs: a verified offload, a deliberately damaged backup caught, and a QC report.
+
+## Pricing (USD)
+
+| Tier | Price | Covers |
+|---|---|---|
+| Per-shoot | $99 one-time | One project, prep through delivery; one user, one computer |
+| Creator annual | $599 / year | Unlimited projects; one user, one computer; every update during the year |
+| Studio annual | $2,499 / year | Unlimited projects; up to 10 seats in one organization; every update during the year |
+
+Every tier includes client work. Annual pays for itself at about six projects a year.
+Launch offer: a first project for $29 (details at launch).
+Moving a license to a new computer: email sklarstad@gmail.com.
+
+## FAQ
+
+- Does footage get uploaded? No. Everything runs locally.
+- Is it only for professionals? No — built by professionals, designed for anyone making content.
+- Does it keep improving? Yes; annual licenses include every update during the term, and feature
+  requests to sklarstad@gmail.com shape what gets built next.

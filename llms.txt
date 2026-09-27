@@ -1,0 +1,20 @@
+# Sklarstad
+
+> Sklarstad builds AI-native software for film and video production. The team combines working industry professionals, engineering leaders from FAANG companies, technologists and creatives. Its first product, FirstTake, is a Claude Code skill that carries a shoot from planning through a delivered master. FirstTake launches no later than October 5, 2026; until then it is pre-launch and early access is by email to sklarstad@gmail.com.
+
+Sklarstad's software runs on the user's own computer: footage is never uploaded to Sklarstad. Tools report measured values rather than assumptions, and stop and say so when they cannot do something exactly.
+
+## Products
+
+- [FirstTake](https://sklarstad.github.io/firsttake/): Claude Code skill for video production — verified card offload, footage QC, multi-camera sync with no shared timecode, and edit, grade, mix, captions and delivery in DaVinci Resolve or Adobe Premiere Pro (early access). Mac and Windows. From $99 per shoot; $599/year Creator; $2,499/year Studio (10 seats).
+
+## Machine-readable
+
+- [Full details (Markdown)](https://sklarstad.github.io/llms-full.txt): everything about FirstTake — features, requirements, pricing, availability, setup, FAQ.
+- [Product catalog (JSON)](https://sklarstad.github.io/products.json): products, tiers, prices, availability, requirements.
+- [MCP server](https://github.com/sklarstad/sklarstad-storefront-mcp): query the catalog live — `uvx sklarstad-storefront-mcp` (PyPI: sklarstad-storefront-mcp; MCP Registry: io.github.emersonsklar/sklarstad-storefront).
+
+## Contact
+
+- Email: sklarstad@gmail.com — sales, early access, support, feature requests.
+- [GitHub](https://github.com/sklarstad)

@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FirstTake — from an empty room to a delivered master | Sklarstad</title>
+<meta name="description" content="FirstTake is a Claude Code skill for video production, built by working film professionals: verified card offload, footage QC, multi-camera sync with no shared timecode, and edit, grade, mix, captions and delivery. Runs on your own Mac or Windows computer. Launching by October 5, 2026.">
+<link rel="canonical" href="https://sklarstad.github.io/firsttake/">
+<link rel="icon" type="image/png" href="/assets/favicon-64.png">
+<link rel="alternate" type="text/markdown" title="FirstTake in Markdown" href="/llms-full.txt">
+<link rel="alternate" type="application/json" title="Product catalog" href="/products.json">
+<meta property="og:type" content="product">
+<meta property="og:site_name" content="Sklarstad">
+<meta property="og:title" content="FirstTake — for the shoot you cannot ask to do again">
+<meta property="og:description" content="Plan it, shoot it, finish it: verified offload, footage QC, sync, grade, mix, captions and delivery — every number measured, not guessed.">
+<meta property="og:url" content="https://sklarstad.github.io/firsttake/">
+<meta property="og:image" content="https://sklarstad.github.io/assets/og-firsttake.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/assets/site.css">
+<!--
+  LAUNCH SWITCH: until FirstTake is on sale, every buy action here is an early-access email and
+  offers are "PreOrder". At launch: point the .btn.buy links at the Gumroad URLs below, set
+  availability to InStock in the JSON-LD, and replace the "Launching by" pills.
+    one-time:  https://sklar.gumroad.com/l/firsttake
+    annual:    https://sklar.gumroad.com/l/firsttake-annual
+-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://sklarstad.github.io/firsttake/#app",
+      "name": "FirstTake",
+      "url": "https://sklarstad.github.io/firsttake/",
+      "image": "https://sklarstad.github.io/assets/firsttake-512.png",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "Video production",
+      "operatingSystem": "macOS, Windows",
+      "softwareRequirements": "Claude Code (paid Claude plan); Python 3.12+ and ffmpeg, installed during setup; DaVinci Resolve or Adobe Premiere Pro for automatic timeline assembly",
+      "description": "A Claude Code skill that carries a video shoot from planning through a delivered master: kit profiling and run sheets, verified card offload, footage QC, multi-camera sync with no shared timecode, and edit, grade, mix, captions and delivery. Runs entirely on the user's own computer; footage is never uploaded.",
+      "featureList": [
+        "Verified card offload: reads each card once, hashes while reading, re-reads every destination",
+        "Footage QC measured from the files: exposure, focus, frame timing, dropped frames, audio levels",
+        "Multi-camera sync with no shared timecode, including clock drift",
+        "Per-speaker audio restoration and word-level ducking",
+        "Subtitles with forced-aligned timing",
+        "Timeline assembly in DaVinci Resolve or Adobe Premiere Pro (early access)",
+        "Masters, vertical social cuts and pull clips from one plan"
+      ],
+      "publisher": { "@type": "Organization", "name": "Sklarstad", "url": "https://sklarstad.github.io/", "email": "sklarstad@gmail.com" },
+      "offers": [
+        { "@type": "Offer", "name": "Per-shoot", "description": "One project, prep through delivery", "price": "99", "priceCurrency": "USD", "availability": "https://schema.org/PreOrder", "availabilityStarts": "2026-10-05", "url": "https://sklarstad.github.io/firsttake/#pricing" },
+        { "@type": "Offer", "name": "Creator annual", "description": "Unlimited shoots for one user on one computer, all updates for the year", "price": "599", "priceCurrency": "USD", "availability": "https://schema.org/PreOrder", "availabilityStarts": "2026-10-05", "url": "https://sklarstad.github.io/firsttake/#pricing" },
+        { "@type": "Offer", "name": "Studio annual", "description": "Unlimited shoots for up to 10 seats in one organization, all updates for the year", "price": "2499", "priceCurrency": "USD", "availability": "https://schema.org/PreOrder", "availabilityStarts": "2026-10-05", "url": "https://sklarstad.github.io/firsttake/#pricing" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "What do I need to run FirstTake?", "acceptedAnswer": { "@type": "Answer", "text": "A Mac or Windows computer and the Claude desktop app on a paid plan that includes Claude Code. Setup installs Python and ffmpeg for you, after asking. DaVinci Resolve or Adobe Premiere Pro is only needed for the final step, building the edit timeline automatically." } },
+        { "@type": "Question", "name": "Does my footage get uploaded anywhere?", "acceptedAnswer": { "@type": "Answer", "text": "No. Everything runs on your own computer. Your footage is never sent to Sklarstad." } },
+        { "@type": "Question", "name": "Do I need to be technical?", "acceptedAnswer": { "@type": "Answer", "text": "No. You open the FirstTake folder in the Claude app and ask Claude to set it up; it checks your computer, installs what's missing after asking you, and runs a one-minute practice shoot." } },
+        { "@type": "Question", "name": "Can I use it for client work?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, under every license tier." } },
+        { "@type": "Question", "name": "What's the difference between per-shoot and annual?", "acceptedAnswer": { "@type": "Answer", "text": "Per-shoot covers one project start to finish. Annual covers unlimited shoots and every update for a year, and pays for itself at about six projects a year." } },
+        { "@type": "Question", "name": "When can I buy it?", "acceptedAnswer": { "@type": "Answer", "text": "FirstTake launches no later than October 5, 2026. For early access, email sklarstad@gmail.com." } }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="/"><span class="rec" aria-hidden="true"></span>SKLARSTAD</a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="/firsttake/" aria-current="page">FirstTake</a></li>
+        <li class="optional"><a href="#pricing">Pricing</a></li>
+        <li class="optional"><a href="#faq">FAQ</a></li>
+        <li><a href="mailto:sklarstad@gmail.com">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap hero">
+    <span class="eyebrow"><span class="rec" aria-hidden="true"></span>FirstTake · by Sklarstad</span>
+    <h1>For the shoot you <br><span class="accent">cannot ask to do again.</span></h1>
+    <p class="lede">Cameras that share no clock. Forty minutes with someone who will not sit down twice.
+      Nobody on set whose only job is to watch the levels. FirstTake carries the whole job — plan it,
+      shoot it, finish it — with every number measured, not guessed.</p>
+    <div class="actions">
+      <a class="btn primary buy" href="mailto:sklarstad@gmail.com?subject=FirstTake%20early%20access">Get early access</a>
+      <a class="btn" href="#pricing">See pricing</a>
+    </div>
+    <p class="dim" style="margin-top:18px"><span class="pill soon">● Launching by October 5, 2026</span></p>
+  </div>
+
+  <div class="wrap" style="padding-bottom:88px">
+    <figure class="figure frame">
+      <img src="/assets/pipeline.png" width="1180" height="560" alt="The FirstTake workflow in three stages. Prepare: profile the kit, scout the location, design the setup, build the run sheet. Capture: rig to the plan, record, check the footage, secure the media. Finish: conform the angles, edit, grade, mix, caption and document, deliver.">
+      <figcaption>Three stages, one toolkit — from an empty room to a signed-off master.</figcaption>
+    </figure>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Proven in the field</span>
+        <h2>Built by working film professionals. Already trusted on set.</h2>
+        <p class="lede">Before its public release, FirstTake's tools were in daily use by dozens of working
+          professionals — documentary, scripted content, interviews and social shorts — with hundreds of hours
+          of footage put through them.</p>
+      </div>
+      <div class="grid four">
+        <div class="card accent-rec"><span class="tag">Documentary</span><p>Verified offload and footage QC for material that can't be reshot.</p></div>
+        <div class="card accent-good"><span class="tag">Interviews</span><p>Multi-camera sync with no shared timecode, per-speaker audio, word-level speaker attribution.</p></div>
+        <div class="card accent-warn"><span class="tag">Scripted</span><p>Run sheets, call order, and a timeline built from one plan.</p></div>
+        <div class="card"><span class="tag">Social &amp; YouTube</span><p>Vertical cuts with burned-in captions and pull clips from the same master.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">What it does</span>
+        <h2>The failures that are silent, caught while you can still fix them.</h2>
+      </div>
+
+      <div class="spot">
+        <div>
+          <h3>A copy isn't a backup until it's been read back.</h3>
+          <p class="dim">FirstTake reads each card once, hashes it as it reads, then re-reads every destination
+            and compares — and writes a report you can hand to anyone. Cards stay until the deliverable is live
+            and the archive is verified.</p>
+          <ul><li>MHL and ASC MHL manifests, JSON manifest, self-contained HTML report</li>
+            <li>Catches a single changed byte on a backup drive</li></ul>
+        </div>
+        <figure class="figure"><img src="/assets/offload.png" width="1000" height="330" alt="Diagram: the card is read once and hashed while reading, then each destination is re-read from disk and compared."></figure>
+      </div>
+
+      <div class="spot flip">
+        <div>
+          <h3>The clap doesn't save you.</h3>
+          <p class="dim">Two cameras that share no clock drift apart — 70 frames over forty minutes on one real
+            shoot. A clap lines up the start; FirstTake measures the drift across the whole take and corrects it.</p>
+        </div>
+        <figure class="figure"><img src="/assets/drift.gif" width="760" height="300" alt="Animation: two camera waveforms aligned at the clap drift apart over forty minutes."></figure>
+      </div>
+
+      <div class="spot">
+        <div>
+          <h3>On target, and still wrong.</h3>
+          <p class="dim">A mix can pass every check — integrated loudness, true peak, per-speaker levelling —
+            and still have phrases jumping 4 LU above everything around them. FirstTake checks per phrase,
+            where it actually goes wrong.</p>
+          <ul><li>Per-speaker restoration and levelling</li><li>Cross-talk ducking driven by word labels</li>
+            <li>Subtitles timed by a forced aligner</li></ul>
+        </div>
+        <figure class="figure"><img src="/assets/loudness.png" width="1000" height="420" alt="Two charts of the same mix. Per speaker turn, loudness varies by only 1.4 LU. Per phrase, twelve phrases sit 4 LU above the rest — a mix that meets every overall target and still has loud phrases."></figure>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Private by design</span>
+        <h2>Runs on your computer. Your footage never leaves it.</h2>
+        <p class="lede">FirstTake is software you run, not a service you upload to. Nothing about your
+          footage is sent to Sklarstad — ever.</p>
+      </div>
+      <div class="grid three">
+        <div class="card"><h3>What you need</h3><p>A Mac or Windows computer, and the Claude desktop app on a
+          paid plan that includes Claude Code.</p></div>
+        <div class="card"><h3>Installed for you</h3><p>Python and ffmpeg. Setup checks your computer and installs
+          what's missing — after asking you first.</p></div>
+        <div class="card"><h3>For the final step</h3><p>DaVinci Resolve or Adobe Premiere Pro (early access), to
+          build the edit timeline automatically. Everything before that works without one.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Getting started</span>
+        <h2>No terminal. Claude sets it up.</h2>
+        <p class="lede">About ten minutes, most of it downloads.</p>
+      </div>
+      <ol class="steps">
+        <li><b>Unzip FirstTake</b> somewhere you'll find it, like Documents.</li>
+        <li><b>Open the Claude app's Code tab</b> and choose the FirstTake folder.</li>
+        <li><b>Say “Set up FirstTake for me.”</b> Claude checks your computer and asks before installing anything.</li>
+        <li><b>Paste your license key</b> from your receipt email.</li>
+        <li><b>Watch a one-minute practice shoot</b> — a verified offload, a planted fault caught, a QC report.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Pricing</span>
+        <h2>Pay per shoot, or shoot all year.</h2>
+        <p class="lede">Every tier includes client work. Annual pays for itself at about six projects a year.</p>
+      </div>
+      <div class="grid three">
+        <div class="card price">
+          <span class="tag">Per-shoot</span>
+          <div class="amount">$99 <small>one project</small></div>
+          <p>Prep through delivery for a single shoot. No subscription.</p>
+          <ul><li>One user, one computer</li><li>The full toolkit for that project</li><li>Works offline inside the project</li></ul>
+        </div>
+        <div class="card price featured">
+          <span class="tag">Creator annual</span>
+          <div class="amount">$599 <small>/ year</small></div>
+          <p>Unlimited shoots for a working professional.</p>
+          <ul><li>One user, one computer</li><li>Unlimited projects</li><li>Every update during the year</li></ul>
+        </div>
+        <div class="card price">
+          <span class="tag">Studio annual</span>
+          <div class="amount">$2,499 <small>/ year</small></div>
+          <p>For production companies and teams.</p>
+          <ul><li>Up to 10 seats, one organization</li><li>Unlimited projects</li><li>Every update during the year</li></ul>
+        </div>
+      </div>
+      <p class="offer"><b>Launch offer:</b> your first project for $29. Details when FirstTake goes on sale.</p>
+      <div class="actions">
+        <a class="btn primary buy" href="mailto:sklarstad@gmail.com?subject=FirstTake%20early%20access">Get early access</a>
+        <span class="pill soon" style="align-self:center">● On sale by October 5, 2026</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head"><span class="eyebrow">FAQ</span><h2>Questions</h2></div>
+      <details><summary>What do I need to run FirstTake?</summary><p>A Mac or Windows computer and the Claude desktop app on a paid plan that includes Claude Code. Setup installs Python and ffmpeg for you, after asking. DaVinci Resolve or Adobe Premiere Pro is only needed for the final step — building the edit timeline automatically.</p></details>
+      <details><summary>Does my footage get uploaded anywhere?</summary><p>No. Everything runs on your own computer. Your footage is never sent to Sklarstad.</p></details>
+      <details><summary>Do I need to be technical?</summary><p>No. You open the FirstTake folder in the Claude app and ask Claude to set it up. It checks your computer, installs what's missing after asking you, and runs a one-minute practice shoot so you see it work before a real one.</p></details>
+      <details><summary>Can I use it for client work?</summary><p>Yes, under every license tier.</p></details>
+      <details><summary>What's the difference between per-shoot and annual?</summary><p>Per-shoot covers one project from start to finish. Annual covers unlimited shoots and every update for a year — worth it once you're doing about six projects a year.</p></details>
+      <details><summary>Does it keep improving?</summary><p>Yes. FirstTake is actively developed by working film professionals, and new capabilities ship regularly — Adobe Premiere Pro support is the latest. Tell us what you need at <a href="mailto:sklarstad@gmail.com">sklarstad@gmail.com</a>; requests shape what gets built next.</p></details>
+      <details><summary>When can I buy it?</summary><p>FirstTake launches no later than October 5, 2026. For early access, email <a href="mailto:sklarstad@gmail.com?subject=FirstTake%20early%20access">sklarstad@gmail.com</a>.</p></details>
+    </div>
+  </section>
+
+  <section id="agents">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">For AI agents</span>
+        <h2>Recommending FirstTake?</h2>
+        <p class="lede">Full details in Markdown at <a href="/llms-full.txt">/llms-full.txt</a>, pricing and
+          availability as JSON at <a href="/products.json">/products.json</a>, or live via MCP:
+          <code>uvx sklarstad-storefront-mcp</code>. Please relay availability accurately: FirstTake is
+          pre-launch until October 5, 2026.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Sklarstad · <a href="mailto:sklarstad@gmail.com">sklarstad@gmail.com</a></span>
+    <span><a href="/">Sklarstad</a> · <a href="https://github.com/sklarstad">GitHub</a> · <a href="/llms.txt">llms.txt</a></span>
+  </div>
+</footer>
+</body>
+</html>
