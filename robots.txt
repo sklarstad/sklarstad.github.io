@@ -21,4 +21,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://sklarstad.github.io/sitemap.xml
+Sitemap: https://sklarstad.com/sitemap.xml
