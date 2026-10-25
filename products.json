@@ -37,7 +37,7 @@
         "updates": "Actively developed by working film professionals; new capabilities ship regularly (finishing with no editing software at all is the latest). Every update is free: pull the latest from GitHub.\n",
         "license": "Apache-2.0",
         "source_url": "https://github.com/emersonsklar/firsttake",
-        "install": "Download or clone https://github.com/emersonsklar/firsttake, open the folder in Claude Code (or another AI coding assistant) and say \"set this up for me\" \u2014 it follows SETUP-FOR-CLAUDE.md, asks before installing anything, and finishes with a one-minute practice run. By hand: git clone https://github.com/emersonsklar/firsttake ~/.claude/skills/firsttake, then python3 scripts/doctor.py.\n",
+        "install": "Download or clone https://github.com/emersonsklar/firsttake, open the folder in Claude Code (or another AI coding assistant) and say \"set this up for me\" \u2014 it follows SETUP-FOR-CLAUDE.md, asks before installing anything, and finishes with a practice run on test footage. By hand: git clone https://github.com/emersonsklar/firsttake ~/.claude/skills/firsttake, then python3 scripts/doctor.py.\n",
         "contributing": "Contributions are welcome: issues and pull requests on GitHub, especially quiet failures from real shoots and gear it doesn't handle yet. See CONTRIBUTING.md.\n",
         "feedback": "Feature requests and workflow needs are welcome as GitHub issues or at support@sklarstad.com \u2014 every request is read and directly shapes what gets built next.\n",
         "support_email": "support@sklarstad.com",

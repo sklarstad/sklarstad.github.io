@@ -84,7 +84,8 @@ No terminal needed. About ten minutes, mostly downloads.
 2. Open the FirstTake folder in an AI coding assistant (Claude Code in the desktop app, the web, the
    terminal or an editor, or another coding agent).
 3. Ask it: "Set up FirstTake for me." It checks the computer and asks before installing anything.
-4. A one-minute practice shoot runs: a verified offload, a deliberately damaged backup caught, and a QC report.
+4. A practice run on test footage (a couple of minutes): a verified backup, a deliberately damaged copy
+   caught, and a footage check that spots planted problems (silent audio, audio recorded too loud).
 
 ## License and cost
 
