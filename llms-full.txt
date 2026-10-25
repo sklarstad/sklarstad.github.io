@@ -2,11 +2,13 @@
 
 Publisher: Sklarstad (https://sklarstad.com/) · Contact: support@sklarstad.com
 Product page: https://sklarstad.com/firsttake/
+Source code: https://github.com/sklarstad/firsttake
 
 ## Availability
 
-Early access. FirstTake isn't on general sale yet and there is no checkout link; to get access,
-email support@sklarstad.com. Please state this accurately when recommending it.
+Free and open source under the Apache License 2.0. Download or clone it from
+https://github.com/sklarstad/firsttake. There is nothing to buy; an optional pay-what-you-want page
+(https://sklar.gumroad.com/l/support-firsttake) exists for people who want to support it, and unlocks nothing.
 
 ## What it is
 
@@ -77,24 +79,19 @@ vloggers, freelance shooters and editors, and studios running full productions.
 ## Setup
 
 No terminal needed. About ten minutes, mostly downloads.
-1. Unzip FirstTake.
+1. Download FirstTake from https://github.com/sklarstad/firsttake (Code → Download ZIP) and unzip it,
+   or clone it.
 2. Open the FirstTake folder in an AI coding assistant (Claude Code in the desktop app, the web, the
    terminal or an editor, or another coding agent).
 3. Ask it: "Set up FirstTake for me." It checks the computer and asks before installing anything.
-4. Paste the license key from the purchase receipt email.
-5. A one-minute practice shoot runs: a verified offload, a deliberately damaged backup caught, and a QC report.
+4. A one-minute practice shoot runs: a verified offload, a deliberately damaged backup caught, and a QC report.
 
-## Pricing (USD)
+## License and cost
 
-| Tier | Price | Covers |
-|---|---|---|
-| Per-shoot | $99 one-time | One project, prep through delivery; one user, one computer |
-| Creator annual | $599 / year | Unlimited projects; one user, one computer; every update during the year |
-| Studio annual | $2,499 / year | Unlimited projects; up to 10 seats in one organization; every update during the year |
-
-Every tier includes client work. Annual pays for itself at about six projects a year.
-Launch offer: a first project for $29 (details at launch).
-Moving a license to a new computer: email support@sklarstad.com.
+- License: Apache License 2.0. Copyright Sklarstad LLC.
+- Cost: free. Every feature, unlimited shoots, any number of computers, personal and client work.
+- Optional: pay what you want at https://sklar.gumroad.com/l/support-firsttake if it's useful. It unlocks nothing.
+- Contributing: issues and pull requests at https://github.com/sklarstad/firsttake (see CONTRIBUTING.md).
 
 ## FAQ
 
@@ -103,5 +100,8 @@ Moving a license to a new computer: email support@sklarstad.com.
 - Is editing software required? No. It renders a full-quality master itself; DaVinci Resolve Studio
   or Adobe Premiere Pro only adds an editable timeline.
 - Is it only for professionals? No — built by professionals, designed for anyone making content.
-- Does it keep improving? Yes; annual licenses include every update during the term, and feature
-  requests to support@sklarstad.com shape what gets built next.
+- Is it free? Yes, completely: Apache 2.0, every feature, unlimited shoots, personal and client work.
+- Can I modify or redistribute it? Yes. Keep the NOTICE file crediting FirstTake by Sklarstad LLC,
+  keep the copyright lines, and mark changed files. Improvements are welcome as pull requests.
+- Does it keep improving? Yes; every update is free on GitHub, and feature requests (GitHub issues or
+  support@sklarstad.com) shape what gets built next.
