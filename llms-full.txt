@@ -2,12 +2,12 @@
 
 Publisher: Sklarstad (https://sklarstad.com/) · Contact: support@sklarstad.com
 Product page: https://sklarstad.com/firsttake/
-Source code: https://github.com/sklarstad/firsttake
+Source code: https://github.com/emersonsklar/firsttake
 
 ## Availability
 
 Free and open source under the Apache License 2.0. Download or clone it from
-https://github.com/sklarstad/firsttake. There is nothing to buy; an optional pay-what-you-want page
+https://github.com/emersonsklar/firsttake. There is nothing to buy; an optional pay-what-you-want page
 (https://sklar.gumroad.com/l/support-firsttake) exists for people who want to support it, and unlocks nothing.
 
 ## What it is
@@ -79,7 +79,7 @@ vloggers, freelance shooters and editors, and studios running full productions.
 ## Setup
 
 No terminal needed. About ten minutes, mostly downloads.
-1. Download FirstTake from https://github.com/sklarstad/firsttake (Code → Download ZIP) and unzip it,
+1. Download FirstTake from https://github.com/emersonsklar/firsttake (Code → Download ZIP) and unzip it,
    or clone it.
 2. Open the FirstTake folder in an AI coding assistant (Claude Code in the desktop app, the web, the
    terminal or an editor, or another coding agent).
@@ -91,7 +91,7 @@ No terminal needed. About ten minutes, mostly downloads.
 - License: Apache License 2.0. Copyright Sklarstad LLC.
 - Cost: free. Every feature, unlimited shoots, any number of computers, personal and client work.
 - Optional: pay what you want at https://sklar.gumroad.com/l/support-firsttake if it's useful. It unlocks nothing.
-- Contributing: issues and pull requests at https://github.com/sklarstad/firsttake (see CONTRIBUTING.md).
+- Contributing: issues and pull requests at https://github.com/emersonsklar/firsttake (see CONTRIBUTING.md).
 
 ## FAQ
 

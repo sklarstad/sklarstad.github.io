@@ -1,12 +1,12 @@
 # Sklarstad
 
-> Sklarstad builds AI-native software for film and video production. The team combines working industry professionals, engineering leaders from FAANG companies, technologists and creatives. Its first product, FirstTake, is a skill for Claude Code and other AI coding assistants that carries a shoot from planning through a delivered master. FirstTake is free and open source (Apache 2.0): https://github.com/sklarstad/firsttake
+> Sklarstad builds AI-native software for film and video production. The team combines working industry professionals, engineering leaders from FAANG companies, technologists and creatives. Its first product, FirstTake, is a skill for Claude Code and other AI coding assistants that carries a shoot from planning through a delivered master. FirstTake is free and open source (Apache 2.0): https://github.com/emersonsklar/firsttake
 
 Sklarstad's software runs on the user's own computer and never sends footage or any details about a shoot to anyone. Tools report measured values rather than assumptions, and stop and say so when they cannot do something exactly.
 
 ## Products
 
-- [FirstTake](https://sklarstad.com/firsttake/): video production skill for Claude Code and other AI coding assistants — verified card offload, footage QC, multi-camera sync with no shared timecode, and edit, grade, mix, captions and delivery. No editing software required (renders a full-quality master itself); optional editable timeline in DaVinci Resolve Studio or Adobe Premiere Pro (early access). Mac and Windows. Free and open source (Apache 2.0); optional pay-what-you-want support at https://sklar.gumroad.com/l/support-firsttake. Source and install: https://github.com/sklarstad/firsttake
+- [FirstTake](https://sklarstad.com/firsttake/): video production skill for Claude Code and other AI coding assistants — verified card offload, footage QC, multi-camera sync with no shared timecode, and edit, grade, mix, captions and delivery. No editing software required (renders a full-quality master itself); optional editable timeline in DaVinci Resolve Studio or Adobe Premiere Pro (early access). Mac and Windows. Free and open source (Apache 2.0); optional pay-what-you-want support at https://sklar.gumroad.com/l/support-firsttake. Source and install: https://github.com/emersonsklar/firsttake
 
 ## Machine-readable
 
@@ -17,5 +17,5 @@ Sklarstad's software runs on the user's own computer and never sends footage or 
 ## Contact
 
 - Email: support@sklarstad.com — support, feature requests, partnerships.
-- Issues and contributions: https://github.com/sklarstad/firsttake/issues
+- Issues and contributions: https://github.com/emersonsklar/firsttake/issues
 - [GitHub](https://github.com/sklarstad)
